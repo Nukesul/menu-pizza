@@ -13,7 +13,7 @@ function Products() {
   const categories = useRef([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://ch79145.tw1.ru/api/products")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
@@ -113,7 +113,7 @@ function Products() {
         >
           <img
             className="menu-product-image"
-            src={`http://localhost:5000${product.image_url}`}
+            src={`https://ch79145.tw1.ru${product.image_url}`}
             alt={product.name}
           />
           <div className="menu-product-info">
@@ -147,7 +147,7 @@ function Products() {
             >
               <img
                 className="best-seller-product-image"
-                src={`http://localhost:5000${product.image_url}`}
+                src={`https://ch79145.tw1.ru${product.image_url}`}
                 alt={product.name}
               />
               <div className="best-seller-product-info">
@@ -201,7 +201,7 @@ function Products() {
                     >
                       <img
                         className="menu-product-image"
-                        src={`http://localhost:5000${product.image_url}`}
+                        src={`https://ch79145.tw1.ru${product.image_url}`}
                         alt={product.name}
                       />
                       <div className="menu-product-info">
@@ -236,7 +236,7 @@ function Products() {
             </button>
             <div className="modal-body">
               <img
-                src={`http://localhost:5000${selectedProduct.product.image_url}`}
+                src={`https://ch79145.tw1.ru${selectedProduct.product.image_url}`}
                 alt={selectedProduct.product.name}
                 className="modal-image"
               />

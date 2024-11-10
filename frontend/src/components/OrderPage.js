@@ -63,7 +63,7 @@ const OrderPage = () => {
       <div className="items-section">
         {cartItems.map((item) => (
           <div key={item.id} className="order-item">
-            <img src={`http://localhost:5000${item.image}`} alt={item.name} />
+            <img src={`https://ch79145.tw1.ru${item.image}`} alt={item.name} />
             <div className="order-item-info">
               <h3>{item.name}</h3>
               <p>{item.price} сом</p>
